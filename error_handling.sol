@@ -29,7 +29,7 @@ contract Project_by_rishabh {
 
     function transfer(address ad,address ad2,int amt) public {
         
-        // assert(balances[ad]>=amt);
+         assert(balances[ad]>=amt);
 
         balances[ad]-=amt;
         balances[ad2]+=amt;
